@@ -18,7 +18,19 @@ function AppContent() {
     return <AuthPage />;
   }
 
-  
+  switch (profile.user_role) {
+    case "admin":
+      return <AdminDashboard />;
+    case "teacher":
+      return <TeacherDashboard />;
+    case "student":
+      return <StudentDashboard />;
+    case "parent":
+      return <ParentDashboard />;
+    default:
+      return <AuthPage />;
+  }
+}
 
 function App() {
   return (
