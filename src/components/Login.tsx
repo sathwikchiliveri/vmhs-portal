@@ -114,6 +114,5 @@ export function Login({ onToggleMode }: LoginProps) {
           </p>
         </div>
       </div>
-    </div>
   );
 }
